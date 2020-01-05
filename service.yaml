@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: dash-app
+spec:
+  type: LoadBalancer
+  selector:
+    app: dash
+  ports:
+    - port: 80
